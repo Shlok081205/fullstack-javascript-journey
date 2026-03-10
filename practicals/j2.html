@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a ={
+            'name':'priya',
+            'age':18,
+            'branch':{
+                'b1':'CST',
+                'b2':'CS IT'
+            },
+            'marks':[25,24,18],
+            'ispresent':true,
+            'city':null
+        }
+
+        console.log(a);
+        console.log(a.name);
+        console.log(a['age']);
+        console.log(a.branch.b1);
+        console.log(a['branch']['b1']);
+        console.log(a.marks[2]);
+        console.log(a.ispresent);
+        console.log(a.city);
+
+        a.name = 'priti';
+        console.log(a);
+
+        a['age'] = 21;
+        console.log(a);
+
+        let key ='city';
+        a[key] = 'Ahm';
+        console.log(a);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
