@@ -12,13 +12,11 @@ This repository documents my Full Stack Development journey using JavaScript (Se
 ## 📂 Structure
 ```
 fullstack-javascript-journey/
-├── 01-json/              # JSON fundamentals
-├── 02-nodejs/            # Node.js core concepts
-├── 03-express/           # Express.js framework
-├── 04-react/             # React fundamentals & hooks
-├── 05-mongodb/           # MongoDB & Mongoose
-├── practicals/           # All practical assignments
-└── projects/             # Full MERN projects
+├── 01-json/          # JSON fundamentals
+├── 02-nodejs/        # Node.js core concepts
+├── 03-express/       # Express.js framework
+├── 04-react/         # React fundamentals & hooks
+└── 05-mongodb/       # MongoDB & Mongoose
 ```
 
 ## 📈 Progress
