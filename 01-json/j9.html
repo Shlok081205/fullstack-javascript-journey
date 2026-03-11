@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let obj = JSON.parse('{"var1":"LJ","var2":"Uni"}');
-      console.log(obj["var1"]);
-      console.log(obj.var2);
+      function firstlast(arr) {
+        let result = {};
+
+        result[arr[0]] = arr[arr.length - 1];
+
+        return result;
+      }
+
+      let input = ["ABC", "DEF", "Employee", "Manager"];
+      console.log(firstlast(input));
     </script>
   </head>
   <body></body>

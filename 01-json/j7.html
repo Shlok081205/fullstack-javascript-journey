@@ -1,0 +1,40 @@
+<!--Consider below object and fetch values using for of and for in loop-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let obj = {
+        FSD: [
+          {
+            Topic: "HTML",
+            Course: "Beginer",
+            content: ["tags", "table", "form"],
+          },
+          {
+            Topic: "CSS",
+            Course: "Beginer",
+            content: ["style", "color"],
+          },
+        ],
+      };
+
+      document.writeln("Loop 1<br>:");
+      for (x in obj.FSD) {
+        for (y in obj.FSD[x]) {
+          document.write(obj.FSD[x][y] + "<br>");
+        }
+      }
+
+      document.writeln("<br>Loop 2:<br>");
+      for (x of obj.FSD) {
+        for (y in x) {
+          document.write(y + "<br>");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

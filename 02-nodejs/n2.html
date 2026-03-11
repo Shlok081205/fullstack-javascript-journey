@@ -1,0 +1,26 @@
+<!--Initalize two variables and increament both the variables each time and display the addtion of both the variables at interval of 1 sec-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Increment and Sum</title>
+  </head>
+  <body>
+    <!-- Changed ID to 'result' for clarity -->
+    <p id="result">0</p>
+
+    <script>
+      let a = 0;
+      let b = 0;
+
+      setInterval(() => {
+        a++; // Increment first variable
+        b++; // Increment second variable
+
+        // Display the addition
+        document.getElementById("result").innerHTML = "Sum: " + (a + b);
+      }, 1000); // 1000ms = 1 second
+    </script>
+  </body>
+</html>

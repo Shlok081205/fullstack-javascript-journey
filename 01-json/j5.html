@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const a = {
+        A: "LJU",
+        B: ["CSE", "CST", "IT"],
+        C: [{ D: "Hi", E: [4, "are", { F: ["Semester", "We"] }] }],
+        G: { H: "Students", I: ["of", "!"] },
+        J: [{ K: "Python", L: "Branch" }, "FSD"],
+      };
+
+      document.write(
+        a.C[0].D +
+          a.G.I[1] +
+          " " +
+          a.C[0].E[2].F[1] +
+          " " +
+          a.C[0].E[1] +
+          " " +
+          a.G.H +
+          " " +
+          a.G.I[0] +
+          " " +
+          a.C[0].E[2].F[0] +
+          " " +
+          a.C[0].E[0] +
+          " " +
+          a.B[1] +
+          " " +
+          a.J[0].L,
+      );
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

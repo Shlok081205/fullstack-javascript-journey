@@ -1,0 +1,21 @@
+<!--Write a JSON String with Date property and print Date in IST Format while clicking on button-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function call() {
+        var a = JSON.parse('{"date":"1993-09-02"}');
+        d = new Date(a.date);
+        document.getElementById('demo').innerHTML = d;
+      }
+    </script>
+  </head>
+  <body>
+    <p id="demo">
+      <button onclick="call()">Click Here</button>
+    </p>
+  </body>
+</html>

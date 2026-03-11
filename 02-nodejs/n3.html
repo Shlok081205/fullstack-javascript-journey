@@ -1,0 +1,44 @@
+<!--write code to increae the font size at 50ms and it should stop increaeing when the font size reach to 50 px default font size 15px this task should be performed when you click on increase button-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Resizer</title>
+  <style>
+    #text {
+      font-size: 15px; /* Default starting size */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="increaseBtn">Increase Font Size</button>
+  <p id="text">Watch me grow!</p>
+
+  <script>
+    const btn = document.getElementById('increaseBtn');
+    const text = document.getElementById('text');
+    let fontSize = 15;
+    let timer = null;
+
+    btn.addEventListener('click', () => {
+      // Prevent multiple intervals from running at once
+      if (timer) return;
+
+      timer = setInterval(() => {
+        if (fontSize < 50) {
+          fontSize++;
+          text.style.fontSize = fontSize + 'px';
+        } else {
+          clearInterval(timer);
+          timer = null; // Reset so it can be clicked again if needed
+        }
+      }, 50); // 50ms interval
+    });
+  </script>
+
+</body>
+</html>
