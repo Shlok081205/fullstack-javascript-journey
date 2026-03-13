@@ -1,0 +1,45 @@
+<!--Write Code to perform the fllowing tasks 1.Add 3 Buttons  Increase,Decreas and Stop 2.Increase button max:200px 3.Decrease:min:20px 4.Default 50px 5.Stop : Stop the Increase/Decreaseing 6.interval 100ms-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="increaseBtn">Increase Font Size</button>
+    <button id="decreaseBtn">Decrease Font Size</button>
+    <button id="stopBtn">Stop Font Size</button>
+    <p id="text" style="font-size: 50px">Watch me grow!</p>
+    <script>
+      const ibtn = document.getElementById("increaseBtn");
+      const dbtn = document.getElementById("decreaseBtn");
+      const sbtn = document.getElementById("stopBtn");
+      const text = document.getElementById("text");
+      let fontSize = 50;
+
+      ibtn.addEventListener("click", () => {
+        timer = setInterval(() => {
+          if (fontSize < 200) {
+            fontSize++;
+            text.style.fontSize = fontSize + "px";
+          }
+        }, 100);
+      });
+
+      dbtn.addEventListener("click", () => {
+        timer = setInterval(() => {
+          if (fontSize > 20) {
+            fontSize--;
+            text.style.fontSize = fontSize + "px";
+          }
+        }, 100);
+      });
+
+      sbtn.addEventListener("click", () => {
+        clearInterval(timer);
+      });
+    </script>
+  </body>
+</html>

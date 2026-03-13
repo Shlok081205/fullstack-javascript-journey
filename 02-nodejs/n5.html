@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function callback_fun(result) {
+        console.log("Result");
+      }
+      function main(cb) {
+        console.log("Operation 1");
+        setTimeout(function () {
+          console.log("completed");
+        }, 2000);
+
+        console.log("Operation-2");
+      }
+
+      main(callback_fun)
+    </script>
+  </body>
+</html>
