@@ -1,5 +1,3 @@
-## 11 March 2026
-
 ### Node JS:
 
 - open Source
@@ -33,7 +31,31 @@ Sync(Async);
 - append: `fs.appendFileSync("Sample/write.txt"," to Everyone");`
 - delete : `fs.unlinkSync("Sample/wow.txt");`
 - rename : `fs.renameSync("Sample/write.txt","Sample/wow.txt");`
-- copy :
+- copy : `fs.copyFile("source.txt","destination.txt")`
 - remove directory : `fs.rmdirSync("Sample")`
 
 > Note: Refer fs1.js
+
+
+### Sync
+- mkdirSync
+- writeFileSync
+- readFileSync
+- appendFileSync
+- renameSync
+- unlinkSync
+- copyFileSync
+- rmdirSync
+
+
+### =>What whappens when you remove the FOlder containing a file???
+> Director not Empty
+
+
+### Path Module
+=> var pm = require("path")
+
+- pm.basenamr()
+- pm.dirname()
+- pm.extname()
+- pm.parse()
