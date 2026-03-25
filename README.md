@@ -23,8 +23,8 @@ fullstack-javascript-journey/
 | Topic | Status |
 |-------|--------|
 | JSON | 🔄 In Progress |
-| Node.js | ⏳ Upcoming |
-| Express.js | ⏳ Upcoming |
+| Node.js |🔄 In Progress  |
+| Express.js |🔄 In Progress  |
 | React | ⏳ Upcoming |
 | MongoDB | ⏳ Upcoming |
 | MERN Project | ⏳ Upcoming |
