@@ -1,3 +1,5 @@
+//HTML form with username ,password and submit button use post method 2.On visiting '/' show the form 3.on submitting to login page if username is admin display welcome admin else show pls login with admin name and a link back to form
+
 const express = require("express");
 const app = express();
 
@@ -19,12 +21,14 @@ const checkAdmin = (req, res, next) => {
   if (username === "admin") {
     next();
   } else {
-    res.send('<h2 style="color:red;">Warning: Only admin is allowed!</h2>');
+    res.send(
+      '<h2 style="color:red;">login with admin name</h2><br><a href="/">Back</a>',
+    );
   }
 };
 
 app.post("/check", checkAdmin, (req, res) => {
-  res.send(`<h1>Welcome... ${req.body.username}</h1>`);
+  res.send(`<h1>Welcome Admin ${req.body.username}</h1>`);
 });
 
 app.listen(3000, () => {
