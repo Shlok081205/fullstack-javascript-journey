@@ -1,0 +1,58 @@
+Scenario 1:
+
+express/
+├── 1.js
+├── 1.html
+└── 1.css	
+
+Ans.express.static(__dirname)
+
+Scenario 2:
+
+express/
+├── 2.js
+└── Frontend/
+├── 2.html
+└── 2.css
+
+Ans.express.static('Frontend') or express.static(path.join(__dirname, 'Frontend'))
+
+Scenario 3:
+
+express/
+├── Backend/
+│ └── 3.js
+└── Frontend/
+├── 3.html
+└── 3.css
+
+Ans.express.static(path.join(__dirname, '../Frontend'))
+
+Scenario 4:
+
+express/
+├── 4.html
+├── 4.css
+└── Backend/
+└── 4.js
+
+Ans.express.static(path.join(__dirname, '..'))
+
+Scenario 5:
+
+project/
+├── 5.js (Server)
+├── html/
+│   └── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── client.js
+└── images/
+    └── logo.png
+
+Ans.
+app.use(express.static(path.join(__dirname, 'html')));
+app.use(express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'js')));
+app.use(express.static(path.join(__dirname, 'images')));
