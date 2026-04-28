@@ -3,6 +3,7 @@
 express = require("express");
 app = express();
 multer = require("multer");
+
 app.use(express.static(__dirname, { index: "m1.html" }));
 var store = multer.diskStorage({
   destination: "LJU",
