@@ -1,0 +1,23 @@
+<h2>Report Card: <%= name %></h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Exam</th>
+        <th>Marks Obtained</th>
+    </tr>
+    <tr><td>T1</td><td><%= marks.t1 %></td></tr>
+    <tr><td>T2</td><td><%= marks.t2 %></td></tr>
+    <tr><td>T3</td><td><%= marks.t3 %></td></tr>
+    <tr><td>T4</td><td><%= marks.t4 %></td></tr>
+    <tr>
+        <th>Total</th>
+        <th><%= total %> / 100</th>
+    </tr>
+</table>
+
+<% if (total >= 35) { %>
+    <h1 style="color: green;">Result: PASS</h1>
+<% } else { %>
+    <h1 style="color: red;">Result: FAIL</h1>
+<% } %>
+
+<a href="/">Back to Form</a>
